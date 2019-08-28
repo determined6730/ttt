@@ -1,0 +1,11 @@
+{ 
+  "gitbook": "3.x.x",
+  "language": "en",
+  "title": "Wiki Title",
+  "author": "Your name",
+  "structure": { 
+  	"readme": "readme.md",
+    "summary": "summary.md"
+  }
+}
+
