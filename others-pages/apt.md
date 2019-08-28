@@ -1,6 +1,6 @@
 # Apt \(advanced package tool\)
 
-[android](android)
+[android](android.md)
 
 Debian시스템에 포함된 핵심 도구들의 집합체
 
