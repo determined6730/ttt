@@ -3,9 +3,7 @@
 ## tools
 
 * [tcpdump](https://www.androidtcpdump.com/android-tcpdump/downloads)
-* [house](/others-pages/git.md)
-
-
+* [house](git.md)
 
 ## [frida](https://github.com/determined6730/ttt/tree/7d354af7b5807845b13ceb1da5d7c9301b74692b/frida.html) 를 이용해 hooking
 
@@ -13,14 +11,14 @@
 
 ## apk 분석
 
-1. check apk list 
+1. check apk list
 
    ```text
    adb shell pm list packages -f
    package:/data/app/com.lgeha.nuts-uXMVK36q5J3VG6DQBiQhlA==/base.apk=com.lgeha.nuts
    ```
 
-   or 
+   or
 
    ```text
    apk extractor 라는 application을 통해서 추출 가능 함
@@ -28,9 +26,9 @@
 
 2. apk file extraction
 
-   0번에서 나온결과물에서 처음부터 base.apk까지가 package\_path 가 됨  
+   0번에서 나온결과물에서 처음부터 base.apk까지가 package\_path 가 됨
 
-   adb shell 밖에서 pull 하면 apk을 얻을 수 있음 
+   adb shell 밖에서 pull 하면 apk을 얻을 수 있음
 
    ```text
    adb pull [package_path] [store_path]
@@ -45,13 +43,13 @@
    ```
 
 2. 압축프로그램을 통해 apk파일 압축 해제
-3. dex2jar\([https://sourceforge.net/projects/dex2jar/files/](https://sourceforge.net/projects/dex2jar/files/)\)를 이용해서 jar파일 생성 
+3. dex2jar\([https://sourceforge.net/projects/dex2jar/files/](https://sourceforge.net/projects/dex2jar/files/)\)를 이용해서 jar파일 생성
 
    ```text
    d2j-dex2jar.sh classes.dex
    ```
 
-4. JD-GUI\([http://jd.benow.ca/](http://jd.benow.ca/)\)을 이용해서 분석 시작 
+4. JD-GUI\([http://jd.benow.ca/](http://jd.benow.ca/)\)을 이용해서 분석 시작
 
 ## repackaging
 
